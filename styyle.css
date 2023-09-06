@@ -1,0 +1,386 @@
+
+html {
+  scroll-behavior: smooth;
+}
+#sec1 {
+  background-color: #5e5bde;
+  height: 100vh;
+  width: 100%; /* Optionally set a width if needed */
+}
+.h1{
+  font-size: 38px; 
+  font-weight: 700;
+}
+.p{
+  font-size: 20px;
+}
+.splash {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40rem;
+  height: 40rem;
+  z-index: 1;
+}
+.image {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1199px) and (min-width: 582px) {
+  #sec1 {
+    height: auto;
+    width: auto;
+  }
+  .han {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .h1 {
+    font-size: 28px !important;
+    font-weight: 700;
+  }
+  .p {
+    font-size: 18px;
+  }
+  .design {
+    font-size: 35px;
+  }
+  
+  .con p {
+    font-size: 12px;
+  }
+  #expertise {
+    height: 1200px !important;
+  }
+ 
+  #feedbacks {
+    height: 1100px !important;
+    margin-top:20rem;
+  }
+  #portfolio {
+    height:1200px !important;
+  }
+}
+
+
+@media (max-width: 751px) and (min-width:300px){
+  #sec1 {
+    height: 180vh; /* Adjust height for mobile */
+    width: auto;
+  }
+  .splash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40rem;
+    height: 40rem;
+    z-index: 1;
+  }
+  .image {
+    position: relative;
+    
+    z-index: 1;
+  }
+  .h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .p {
+    font-size: 24px;
+  }
+  #expertise {
+    margin-top: 30rem;
+    height: 1700px !important;
+  }
+  .han {
+    margin-top: 2rem;
+  }
+  #about {
+    height:800px;
+  }
+  #workingprocess {
+    height: 700px;
+    margin-top: 5rem;
+    margin-bottom: 50rem;
+    width: 100VW;
+    padding: 30px 0;
+  }
+  .working-list .icons {
+    background-color: #5e5bde;
+    border-radius: 100%;
+  }
+  .abouth1{
+    display: flex;
+    justify-content: center;
+  }
+  .design {
+    display: flex;
+    justify-content: center;
+  }
+  #feedbacks {
+    margin-top: 15rem !important;
+    height: 1300px !important;
+  }
+
+  #portfolio {
+    margin-top: 5rem;
+    height: auto;
+    margin-bottom: 100rem;
+  }
+  .nav-itembtn {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    font-size: 30px;
+    color: aliceblue;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 700;
+  }
+}
+
+.navbar-brand {
+  font-size: 30px !important;
+  margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+/* ----------------about----------------- */
+#about {
+  padding: 80px 0;
+  height: 700px;
+  width: auto;
+  color: #000000;
+}
+
+
+/*expertise*/
+#expertise {
+  padding: 30px 0;
+}
+.expertise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 5rem;
+}
+.expertise-list div {
+  background: #ffffff;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.expertise-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.expertise-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.expertise-list div a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+  display: flex;
+  width: 10rem;
+  justify-content: center;
+}
+
+.expertise-list div:hover {
+  background: #5e5bde;
+  transform: translateY(-10px);
+  color: #ffffff;
+}
+
+.btn {
+  margin: 0 auto;
+  background-color: #ff8800;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: #fac97b;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/*workingprocess*/
+#workingprocess {
+  height: 720px;
+  padding: 30px 0;
+}
+.working-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  margin-top: 5rem;
+}
+.working-list .soc {
+  font-size: 13px;
+  font-weight: 300;
+  transition: background 0.2s, transform 0.5s;
+}
+.working-list .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 8rem;
+  width: 8rem;
+  background-color: #5e5bde;
+  color: #ffffff;
+  border-radius: 100%;
+}
+
+.working-list div i {
+  display: flex;
+  justify-content: center;
+  font-size: 10em;
+  margin-bottom: 30px;
+}
+
+.working-list div h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.working-list div a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+  display: flex;
+  width: 5rem;
+  justify-content: center;
+}
+
+.working-list .soc:hover {
+  transform: translateY(-10px);
+  color: #5e5bde;
+}
+.working-list .icons:hover {
+  background-color: #5e5bde;
+  transform: translateY(-10px);
+  color: rgb(0, 0, 0);
+}
+
+/*---------------feedbacks---------------*/
+
+.feedbacks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 5rem;
+}
+.feedbacks-list .fd {
+  background: #ffffff;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.fd:hover {
+  background-color: #5e5bde;
+  color: #ffffff;
+}
+
+.feedbacks-list div .feedbacks-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.feedbacks-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.feedbacks-list div a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+  display: flex;
+  width: 10rem;
+  justify-content: center;
+}
+
+.feedbacks-list p {
+  font-size: 14px;
+}
+
+.feedbacks-list .name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/*---------------portfolio---------------*/
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px;
+}
+.portfolio-list div .img {
+  height: 18em;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.abtn {
+  margin-top: 0.7rem;
+  font-size: 20px;
+  color: #000000;
+}
+.abtn:hover {
+  color: #5e5bde;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #fbaf3b;
+  border-radius: 30px;
+  padding: 10px;
+  width: 10rem;
+  font-size: 18px;
+  margin-top: 2rem;
+  color: white;
+}
+
+.hbtn {
+  background-color: #fbaf3b;
+  border-radius: 30px;
+  padding: 15px;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+}
+
+.logo {
+  margin-left: 8rem;
+  font-size: 30px;
+  color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
